@@ -3,11 +3,11 @@
 // M = 1; N = 5. -> ""1, 2, 3, 4, 5""
 // M = 4; N = 8. -> ""4, 6, 7, 8""
 
-void Task64()
+void MyTask64()
 {
-    Console.WriteLine("Введите число m: ");
+    Console.Write("Введите число m: ");
     int M = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите число n: ");
+    Console.Write("Введите число n: ");
     int N = Convert.ToInt32(Console.ReadLine());
 
 if (M > N)
@@ -18,20 +18,22 @@ else
         Console.Write($" {i}");
         return;
 }
-Task64();
+MyTask64();
+
 System.Console.WriteLine();
 System.Console.WriteLine();
+
 
 // Задача 66: Задайте значения M и N. Напишите программу, 
 // которая найдёт сумму натуральных элементов в промежутке от M до N.
 // M = 1; N = 15 -> 120
 // M = 4; N = 8. -> 30
 
-void Task66()
+void MyTask66()
 {
-    Console.WriteLine("Введите число m: ");
+    Console.Write("Введите число m: ");
     int M = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите число n: ");
+    Console.Write("Введите число n: ");
     int N = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine();
 int sum = 0;
@@ -51,21 +53,22 @@ else
     }
     Console.WriteLine();
     Console.WriteLine();
-    Console.WriteLine($"Сумма натуральных элементов в промежутке от M до N = {sum}");
+    Console.WriteLine($"Сумма натуральных элементов в промежутке от m до n = {sum}");
     Console.WriteLine();
     return;
 }
-Task66();
+MyTask66();
+
 
 // Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. 
 // Даны два неотрицательных числа m и n.
 // m = 2, n = 3 -> A(m,n) = 29
 
-void Task68()
+void MyTask68()
 {
-    Console.WriteLine("Введите число m: ");
+    Console.Write("Введите число m: ");
     int m = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine("Введите число n: ");
+    Console.Write("Введите число n: ");
     int n = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine();
 
@@ -80,4 +83,6 @@ int A(int m, int n)
   else return (A(m - 1, A(m, n - 1)));
 }
 }
-Task68();
+MyTask68();
+
+
